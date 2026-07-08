@@ -5,31 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>LYMX-2V1P-R125 SPECIFICATION HUD</title>
     <style>
-        /* ส่วน Style เดิมคงไว้ แต่เพิ่มส่วนนี้เพื่อความลื่นไหล */
-        body { 
-            background-color: #000500; 
-            color: #00FF33; 
-            font-family: "Courier New", monospace; 
-            padding: 10px; 
-            margin: 0;
-            /* เพิ่ม touch-action เพื่อให้การจัดการบนจอสัมผัสลื่นขึ้น */
-            touch-action: manipulation;
-        }
-        .box { 
-            max-width: 700px; 
-            margin: 0 auto; 
-            background-color: rgba(0, 8, 0, 0.9); 
-            padding: 15px; 
-            border: 2px solid #00FF33; 
-            /* เพิ่มการจัดการ overflow เผื่อกรณีซูมเข้าแล้วตารางล้น */
-            overflow-x: auto; 
-        }
-        /* ปรับตารางให้ยืดหยุ่นขึ้น */
-        table { width: 100%; min-width: 300px; border-collapse: collapse; }
+        body { background-color: #000500; color: #00FF33; font-family: "Courier New", monospace; text-transform: uppercase; padding: 10px; margin: 0; }
+        .box { max-width: 700px; margin: 0 auto; background-color: rgba(0, 8, 0, 0.9); padding: 15px; border: 2px solid #00FF33; position: relative; }
+        
+        /* ข้อมูลอัปเดต */
+        .update-tag { position: absolute; top: 5px; right: 10px; font-size: 8px; color: #00AA22; }
+        
+        h1 { text-align: center; color: #00FF33; font-size: 20px; border-bottom: 2px dashed #00FF33; padding-bottom: 5px; margin-top: 20px; }
+        .subtitle { text-align: center; font-size: 9px; color: #00AA22; margin-bottom: 15px; }
+        h2 { color: #00FF33; font-size: 14px; margin-top: 20px; border-left: 3px solid #00AA22; padding-left: 8px; }
+        
+        /* ปรับตารางให้คงเส้นไว้เสมอแม้ซูม */
+        table { width: 100%; border-collapse: collapse; margin-top: 5px; border: 1px solid #00AA22; }
+        th, td { border: 1px solid #00AA22; padding: 6px; text-align: left; font-size: 11px; }
+        th { background-color: #001100; color: #00FF33; width: 35%; }
+        td { color: #00FF33; }
     </style>
 </head>
 <body>
     <div class="box">
+        <div class="update-tag">LAST_UPDATE: 09-07-26 03:59</div>
         <h1>LYMX-2V1P-R125</h1>
         <div class="subtitle">OPERATED BY LIGHTYEARX-MOTOREX CO., LTD [LYMX-B5.7A4]</div>
 
