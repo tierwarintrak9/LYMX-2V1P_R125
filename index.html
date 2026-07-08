@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LYMX-2V1P-R125 SPECIFICATION HUD</title>
+    <style>
+        /* TACTICAL HACKER & MILITARY TERMINAL HUD */
+        body { 
+            background-color: #000500; 
+            color: #00FF33; 
+            font-family: "Courier New", monospace; 
+            text-transform: uppercase; 
+            padding: 10px; 
+            margin: 0;
+            background-image: linear-gradient(rgba(0, 50, 0, 0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 50, 0, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        body::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            z-index: 99999;
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .box { 
+            max-width: 700px; 
+            margin: 0 auto; 
+            background-color: rgba(0, 8, 0, 0.9); 
+            padding: 15px; 
+            border: 2px solid #00FF33; 
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 255, 51, 0.2);
+        }
+        
+        .box::before {
+            content: "[ OPERATIONAL HUD ]";
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: #000500;
+            padding: 0 5px;
+            font-size: 10px;
+            color: #00FF33;
+            letter-spacing: 2px;
+        }
+
+        h1 { 
+            text-align: center; 
+            color: #00FF33; 
+            margin: 10px 0 5px 0; 
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px rgba(0, 255, 51, 0.5);
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 10px;
+            color: #00AA22;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #00FF33;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #00FF33;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 3px solid #00AA22;
+            padding-left: 8px;
+            background-color: #001100;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 5px; 
+            margin-bottom: 15px;
+        }
+        
+        th, td { 
+            border: 1px solid #00AA22; 
+            padding: 6px 8px; 
+            text-align: left; 
+            font-size: 12px; 
+        }
+        
+        th { 
+            background-color: #002200; 
+            color: #00FF33; 
+            text-align: center; 
+            width: 30%;
+        }
+        
+        td { 
+            background-color: #000000; 
+            color: #00FF33; 
+        }
+
+        .highlight {
+            color: #AAFF00;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        [span_1](start_span)<h1>LYMX-2V1P-R125[span_1](end_span)</h1>
+        <div class="subtitle">OPERATED BY LIGHTYEARX-MOTOREX CO., LTD [LYMX-B5.7A4]</div>
+
+        <h2>[DATA BLOCK 01] CORE SPECIFICATIONS</h2>
+        <table>
+            <tbody>
+                [span_2](start_span)<tr><th>MaNF</th><td>Thai Honda Co., Ltd.[span_2](end_span)</td></tr>
+                [span_3](start_span)<tr><th>MOD</th><td>MSX 125 SF G [TH][span_3](end_span)</td></tr>
+                [span_4](start_span)<tr><th>* MiD</th><td>2016[span_4](end_span)</td></tr>
+                [span_5](start_span)<tr><th>DeLiV</th><td>T30-AG16[span_5](end_span)</td></tr>
+                [span_6](start_span)<tr><th>DB</th><td>F13-JN25[span_6](end_span)</td></tr>
+                [span_7](start_span)<tr><th>Chas No.</th><td>MLHJC-6185G5458369[span_7](end_span)</td></tr>
+                [span_8](start_span)<tr><th>EnG No.</th><td>JC618E-0458369[span_8](end_span)</td></tr>
+                [span_9](start_span)<tr><th>DRIV</th><td>#HoC-110M[span_9](end_span)</td></tr>
+                [span_10](start_span)<tr><th>DRIV-L No.:</th><td>68004110 [TH][span_10](end_span)</td></tr>
+                [span_11](start_span)<tr><th>LYMXC</th><td>2V1P-R125[span_11](end_span)</td></tr>
+                [span_12](start_span)<tr><th>CLR</th><td>NH-A87P-WP / CBB[span_12](end_span)</td></tr>
+                [span_13](start_span)<tr><th># LCP-H1</th><td>1-KD-9304 [MHK][span_13](end_span)</td></tr>
+                [span_14](start_span)<tr><th># LCP-H2</th><td>2-KH-6684 [RYG] TASSANEE R.[span_14](end_span)</td></tr>
+                [span_15](start_span)<tr><th># LCP-H3</th><td>0-XX-0000 [CBI] TIERWARINTR N.[span_15](end_span)</td></tr>
+                [span_16](start_span)<tr><th>EnG SP</th><td>[JC16E] 124.9 SOHC_PGM-Fi[span_16](end_span)</td></tr>
+                [span_17](start_span)<tr><th>Spark-P</th><td>NGK [Ir77] CPR6_EAIX-9S[span_17](end_span)</td></tr>
+                [span_18](start_span)<tr><th>IGNT-C</th><td>30K V: MUNIN GARAGE[span_18](end_span)</td></tr>
+                [span_19](start_span)<tr><th>Piston SP</th><td>2V-1P (53in)[span_19](end_span)</td></tr>
+                [span_20](start_span)<tr><th>GEAR</th><td>4SP_ROTARY[span_20](end_span)</td></tr>
+                [span_21](start_span)<tr><th>CP</th><td>WET_M-X5: YMH_5YP-E6321-00[span_21](end_span)</td></tr>
+                [span_22](start_span)<tr><th>SPk</th><td>OSAKI_F14 / JT_R31[span_22](end_span)</td></tr>
+                [span_23](start_span)<tr><th>Exhausted SyS.</th><td>STRAIGHT_PIPE TWIN-PN 30:52mm [AR][span_23](end_span)</td></tr>
+            </tbody>
+        </table>
+
+        <h2>[DATA BLOCK 02] MODIFICATIONS & HARDWARE</h2>
+        <table>
+            <tbody>
+                [span_24](start_span)<tr><th>CaTL</th><td>MODI: WAVE_125i-2025 [30-03-26] OUT OF SERVICE: 21-06-26[span_24](end_span)</td></tr>
+                [span_25](start_span)<tr><th>EnG-CL</th><td>O2[span_25](end_span)</td></tr>
+                [span_26](start_span)<tr><th>EnG-L</th><td>0.8 L SYN_10W-40[span_26](end_span)</td></tr>
+                [span_27](start_span)<tr><th>PETROL</th><td><span class="highlight">RON_95</span>[span_27](end_span)</td></tr>
+                [span_28](start_span)<tr><th>AVG.</th><td>44.805 KM/L[span_28](end_span)</td></tr>
+                [span_29](start_span)<tr><th>L-PTS</th><td>112U-N420_CHAIN[span_29](end_span)</td></tr>
+                [span_30](start_span)<tr><th>R-ABS</th><td>SHOWA_USD 31 mm.[span_30](end_span)</td></tr>
+                [span_31](start_span)<tr><th>F-ABS</th><td>GAS: YSS G SERIES 250 mm.[span_31](end_span)</td></tr>
+                [span_32](start_span)<tr><th>SW_ARM</th><td>MOTO-R 2 inch[span_32](end_span)</td></tr>
+                [span_33](start_span)<tr><th>FBR</th><td>NISSIN 2CY-220M N/A-ABS[span_33](end_span)</td></tr>
+                [span_34](start_span)<tr><th>FT</th><td>[MB] MSX_15-ENKEI 120/70-12[span_34](end_span)</td></tr>
+                [span_35](start_span)<tr><th>FrNT-DISC</th><td>220mm: NJ-RACING[span_35](end_span)</td></tr>
+                [span_36](start_span)<tr><th>F_BRK-L</th><td>[R]_MORIN 30 inch [18626][span_36](end_span)</td></tr>
+                [span_37](start_span)<tr><th>RBR</th><td>NISSIN 1CY-190M N/A-ABS[span_37](end_span)</td></tr>
+                [span_38](start_span)<tr><th>RT</th><td>[MB] MSX_15 ΕΝΚΕΙ-130/70-12[span_38](end_span)</td></tr>
+                [span_39](start_span)<tr><th>Re-DiSC</th><td>190mm: SPEEDY RACING[span_39](end_span)</td></tr>
+                [span_40](start_span)<tr><th>R_BRK-L</th><td>[G]_MORIN 22 inch [18626][span_40](end_span)</td></tr>
+                [span_41](start_span)<tr><th>BRAKE-P</th><td>AYASAKI SEMI_METALLIC[span_41](end_span)</td></tr>
+                [span_42](start_span)<tr><th>B-LUBE</th><td>DOT3/DOT4[span_42](end_span)</td></tr>
+                [span_43](start_span)<tr><th>ECU</th><td>[OR_H] 38770-K26-B02[span_43](end_span)</td></tr>
+                [span_44](start_span)<tr><th>M-FUSE</th><td>10/15_A [BLU][span_44](end_span)</td></tr>
+                [span_45](start_span)<tr><th>R-FUSE</th><td>5/7.5/10_A [RED][span_45](end_span)</td></tr>
+                [span_46](start_span)<tr><th>VOLTAGE</th><td>12V-5Ah[span_46](end_span)</td></tr>
+                [span_47](start_span)<tr><th>LIG</th><td>X3-BR-LED + HZL[span_47](end_span)</td></tr>
+                [span_48](start_span)<tr><th>SP_LIG</th><td>X2: PECHAM-YC502 [10-06-26][span_48](end_span)</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
